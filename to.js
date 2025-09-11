@@ -1,7 +1,7 @@
 
 function validateCode(event) {
     event.preventDefault();
-    const code = prompt("ادخل كود الاشتراك");
+    const code = document.getElementById('code').value;
     const validCode = "172018";
 
     if (code === validCode) {
@@ -12,4 +12,5 @@ function validateCode(event) {
     }
     return false;
 }
+
 
